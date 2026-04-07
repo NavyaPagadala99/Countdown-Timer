@@ -1,9 +1,9 @@
-//setting an end date for the Timer
-const inputDate = prompt("Enter the end date and time(ex: 7 Apr,2026 12:00:00):")
-const endDate = Date.parse(inputDate);
-console.log(endDate);
 //setting the start date as now
-const startDate = new Date().getTime();
+const inputstartDate =  prompt("Enter the start date and time(ex: 7 Apr,2026 12:00:00):")
+const startDate = Date.parse(inputstartDate)
+//setting an end date for the Timer
+const inputEndDate = prompt("Enter the end date and time(ex: 7 Apr,2026 12:00:00):")
+const endDate = Date.parse(inputEndDate);
 
 //setInterval function which calculates the time and displays in the page for every second
 let time = setInterval(function updateInterval(){
