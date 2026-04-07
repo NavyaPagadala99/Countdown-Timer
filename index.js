@@ -5,6 +5,9 @@ const startDate = Date.parse(inputstartDate)
 const inputEndDate = prompt("Enter the end date and time(ex: 7 Apr,2026 12:00:00):")
 const endDate = Date.parse(inputEndDate);
 
+if(endDate < startDate){
+    alert("Please enter correct input");
+}
 //setInterval function which calculates the time and displays in the page for every second
 let time = setInterval(function updateInterval(){
     // calculating the present time
